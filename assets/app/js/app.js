@@ -330,7 +330,7 @@ yii.app = (function ($) {
                 });
             } else {
                 using('form', function () {
-                    ajaxDialogForm[moduleName][formName].children().form('clear');
+                    ajaxDialogForm[moduleName][formName].children().form('reset');
                     if (typeof formOptions !== 'undefined' && typeof formOptions.loadData !== 'undefined') {
                         ajaxDialogForm[moduleName][formName].children().form('load', formOptions.loadData);
                     }
